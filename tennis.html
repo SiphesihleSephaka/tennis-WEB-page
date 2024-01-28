@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tennis</title>
+
+    <style>
+body {
+        background-image: linear-gradient(to top,  #3bdf8b 0%,  #dce653 100%);
+        color:black;
+        width: 50%;
+        margin: 50px auto;
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      h1 {
+        text-align: center;
+        color:black;
+      }
+
+        h2 {
+        text-align: center;
+        border: 2px solid #06ce21;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 10px;
+      }
+
+      .line1{
+        color: #0a9671;
+        font: bolder;
+      }
+      .line2{
+        color: #127695;
+        font: bold;
+      }
+
+      img{
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      p{
+        line-height: 1.5;
+        font-size: 20px;
+        font-weight: 100px;
+        margin: 20px 0 10px;
+}
+
+.learn-more {
+        color: blue;
+        text-decoration: none;
+        font-size: 12px;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+        color: white;
+      }
+       button {
+        display: block;
+        margin: 20px auto;
+        background: black;
+        color: white;
+        font-size: 15px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        cursor: pointer;
+        color: white;
+        background-color: green;
+      }
+
+      .footer {
+        text-align: center;
+        color: white;
+        font-size: 15px;
+    
+      }
+      .title{
+        color:black;
+      }
+
+      .title:hover{
+        color:blue;
+      }
+
+      
+
+    </style>
+
+
+
+  </head>
+  <body>
+    <h1>Join Tennis Now!!! 🎾</h1>
+    <h2 class="line1">
+      Interested in playing sports?
+      <div class="line2">Tennis is a great start to learn sports 🏅</div>
+    </h2>
+
+    
+         <img
+      src="https://magazine.fortevillageresort.com/wp-content/uploads/2022/01/tennis-770x513.jpg"
+      alt="tennis"
+      width="400"
+    />
+    
+   <hr>
+    <p>
+     
+      Tennis is a racket sport that is played either
+      individually against a single opponent or between two teams of two players
+      each. 
+      </br>
+      Each player uses a tennis racket that is strung with cord to strike
+      a hollow rubber ball covered with felt over or around a net and into the
+      opponent's court.
+
+
+    <a
+      href="https://en.wikipedia.org/wiki/Tennis"
+      target="_blank"
+      class="learn-more"
+    >
+      LEARN MORE ON <strong> WIKIPEDIA</strong>
+    </a>
+
+</p>
+
+</br>
+
+     <button class="join-button">👉 Sign Up for Tennis Lessons</button>
+
+    
+     <hr>
+
+</br>
+
+    
+    <p class="footer">
+      This page was built by
+      <a
+        href="https://www.linkedin.com/in/siphesihle-sephaka-407a71244/?locale=ms_MY"
+        target="_blank"
+      >
+       <span class="title"> <em> Siphesihle Sephaka </em></span> 
+      </a>
+    </p>
+
+
+
+    <script>
+
+        function signUp() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let play = prompt (" Do you know how to play tennis?"); 
+
+
+        if (play === "yes") {
+          alert(
+          "Thank you"+ " " + name + " We Happy you want to us!!!" +
+            "We will give you more information on out prices and discounts 😉, meanwhile dont forget to serve"
+          );
+        } 
+        else if (play === "no") {
+alert(
+          "Thank you"+ " " + name + " We Happy you want to play tennis 😊" +
+            "! We'll be in touch by email, to give you more information on out prices and discounts 😉"
+
+        
+        );
+      }
+    }
+
+      let buyButton = document.querySelector(".join-button");
+      buyButton.addEventListener("click", signUp);
+    </script>
+  </body>
+</html>
